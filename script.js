@@ -23,6 +23,19 @@ if ("IntersectionObserver" in window) {
   });
 }
 
+// Mobile menu
+const menuBtn = document.querySelector(".menu-btn");
+if (menuBtn) {
+  const setOpen = (open) => {
+    nav.classList.toggle("open", open);
+    menuBtn.setAttribute("aria-expanded", String(open));
+    menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  };
+  menuBtn.addEventListener("click", () => setOpen(!nav.classList.contains("open")));
+  document.querySelectorAll(".mobile-menu a").forEach((a) => a.addEventListener("click", () => setOpen(false)));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") setOpen(false); });
+}
+
 // Rotating word in the headline
 const word = document.querySelector(".rot-word");
 const words = ["backends", "APIs", "data pipelines", "scrapers"];

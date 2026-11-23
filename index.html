@@ -7,11 +7,42 @@
   <meta name="description" content="Aman: Python backend engineer building FastAPI services, event-driven AWS pipelines, and data scraping systems." />
   <meta name="theme-color" content="#07080c" />
 
+  <meta name="author" content="Aman" />
+  <link rel="canonical" href="https://aman-sg.vercel.app/" />
+
+  <!-- Social share preview (update SITE URL here if your Vercel domain differs) -->
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aman-sg.vercel.app/" />
+  <meta property="og:site_name" content="Aman · Portfolio" />
   <meta property="og:title" content="Aman · Python Backend Engineer" />
-  <meta property="og:description" content="FastAPI, PostgreSQL, AWS, distributed data pipelines. Builder of Logometer, API Stat, and LinkedIn scraping actors on Apify." />
-  <meta property="og:image" content="/assets/aman-og.jpg" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:description" content="FastAPI, PostgreSQL, AWS, distributed data pipelines. Builder of Logometer and LinkedIn scraping actors on Apify." />
+  <meta property="og:image" content="https://aman-sg.vercel.app/assets/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Aman, Python Backend Engineer" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://aman-sg.vercel.app/assets/og.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aman",
+    "jobTitle": "Python Backend Engineer",
+    "url": "https://aman-sg.vercel.app/",
+    "image": "https://aman-sg.vercel.app/assets/aman-og.jpg",
+    "email": "mailto:singhaman123890@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "New Delhi", "addressCountry": "IN" },
+    "alumniOf": "IITM Janakpuri, GGSIPU",
+    "knowsAbout": ["Python", "FastAPI", "PostgreSQL", "AWS", "Distributed Systems", "Web Scraping"],
+    "sameAs": [
+      "https://www.linkedin.com/in/aman-singh-583b22286/",
+      "https://github.com/AmanSg098",
+      "https://apify.com/aman_sng",
+      "https://pypi.org/project/logometer/"
+    ]
+  }
+  </script>
 
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232dd4bf'/%3E%3Cstop offset='1' stop-color='%23a78bfa'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial,sans-serif' font-weight='800' font-size='36' fill='%2307080c'%3EA%3C/text%3E%3C/svg%3E" />
 
@@ -35,8 +66,19 @@
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="btn btn-sm btn-glow" href="/assets/Aman_Backend_Python_Engineer.pdf" target="_blank" rel="noopener">Resume</a>
+      <div class="nav-actions">
+        <a class="btn btn-sm btn-glow" href="/assets/Aman_Backend_Python_Engineer.pdf" target="_blank" rel="noopener">Resume</a>
+        <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+      </div>
     </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+      <a href="#work">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
@@ -46,7 +88,7 @@
         <p class="pill"><span class="dot"></span> Open to backend roles · New Delhi · Gurugram · Noida · Remote</p>
         <h1>
           Hi, I'm <span class="grad">Aman</span>.<br />
-          I build <span class="rotator" aria-live="polite"><span class="rot-word">backends</span></span><br />
+          I build <span class="sr-only">backends, APIs, data pipelines and scrapers</span><span class="rotator" aria-hidden="true"><span class="rot-word">backends</span></span><br />
           that keep running.
         </h1>
         <p class="lead">
@@ -253,9 +295,6 @@
               <li>Tests for success, HTTP 500, and connection-failure cases using mocked transport</li>
             </ul>
             <ul class="tags"><li>FastAPI</li><li>HTTPX</li><li>SQLAlchemy</li><li>SQLite</li><li>pytest</li></ul>
-            <div class="links">
-              <a class="link-btn" href="https://github.com/AmanSg098/api_stat" target="_blank" rel="noopener">GitHub ↗</a>
-            </div>
           </div>
         </article>
 
